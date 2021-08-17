@@ -27,10 +27,14 @@ cp $CURRENT_DIRECTORY/starter.sh $INSTALLATION_DIRECTORY/$INSTALLATION_NAME &&
 cp $CURRENT_DIRECTORY/installer.sh $INSTALLATION_DIRECTORY/$INSTALLATION_NAME
 
 echo 'creating alias' &&
+	if grep vite-react ~/.zshrc > /dev/null; then
+	echo 'alias exists...'
+	else
 	echo "alias vite-react='sh ${INSTALLATION_DIRECTORY}/${INSTALLATION_NAME}/starter.sh'" >> ~/.zshrc
+	fi
 if [ $? -eq 0 ]; then
 	echo 'succeed' &&
-	echo 'use vite-react'
+	echo 'use -> vite-react [name]'
 else
 	echo 'error'
 fi
