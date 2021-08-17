@@ -3,14 +3,24 @@
 ## About 
 Vite-react is a shell script for bootstraping React projects.
 
+## Prerequisites
+- **zsh** (see [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh "Oh My Zsh"))
+- **yarn** 
+```javascript
+npm install --global yarn
+```
 ## Installation
-**requires zsh**
+
 ```zsh
 cd ~/Downloads/vite-react-starter
 ```
 
 ```zsh
 sh ./install.sh
+```
+
+```zsh
+source ~/.zshrc
 ```
 
 ## Use
