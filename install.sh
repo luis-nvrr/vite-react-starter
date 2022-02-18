@@ -1,4 +1,4 @@
-#!bin/zsh
+#!/bin/bash
 
 CURRENT_DIRECTORY=$PWD
 INSTALLATION_DIRECTORY=/home/$USER/.starters
